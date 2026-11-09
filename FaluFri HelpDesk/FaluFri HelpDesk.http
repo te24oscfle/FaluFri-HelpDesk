@@ -1,6 +1,5 @@
 @FaluFri_HelpDesk_HostAddress = http://localhost:5226
 
-GET {{FaluFri_HelpDesk_HostAddress}}/weatherforecast/
-Accept: application/json
+
 
 ###
