@@ -84,16 +84,15 @@ public class Context : DbContext
         modelBuilder.Entity<TicketHistory>()
             .Property(history => history.Action)
             .HasConversion<string>()
-            .HasMaxLength(50)
-            .HasDefaultValue(TicketHistoryAction.FieldChanged);
+            .HasMaxLength(50);
 
         modelBuilder.Entity<TicketHistory>()
             .Property(history => history.OldValues)
-            .HasDefaultValue("JSON");
+            .HasColumnType("JSON");
 
         modelBuilder.Entity<TicketHistory>()
             .Property(history => history.NewValues)
-            .HasDefaultValue("JSON");
+            .HasColumnType("JSON");
 
         // Restrict users with created TicketHistories from being deleted from the database
         modelBuilder.Entity<TicketHistory>()

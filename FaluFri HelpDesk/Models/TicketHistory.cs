@@ -13,7 +13,7 @@ public class TicketHistory
     public int TicketId { get; set; }
     public int UserId { get; set; }
 
-    public TicketHistoryAction Action { get; set; } = TicketHistoryAction.FieldChanged;
+    public TicketHistoryAction Action { get; set; }
     public string? OldValues { get; set; }
     public string? NewValues { get; set; }
 

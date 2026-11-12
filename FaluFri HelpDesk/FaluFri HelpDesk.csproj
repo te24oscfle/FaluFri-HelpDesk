@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>FaluFri_HelpDesk</RootNamespace>
+	<UserSecretsId>HelpDesk-Development</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
